@@ -48,8 +48,10 @@ async def start(client, message):
             ],[
 
             InlineKeyboardButton('🎬 Movies Update', url='https://t.me/Pirated_Movies_Hub'),
-
-            InlineKeyboardButton('❌ Close', callback_data='close_data')
+            InlineKeyboardButton('Join Our Group 👥', url='https://t.me/PiratedMoviesChat'),
+            ],[
+            InlineKeyboardButton(' 🎟️ Extra Features', callback_data= 'about')
+            InlineKeyboardButton('✖️ Close', callback_data='close_data')
 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,8 +94,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add me to your group ➕', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('🎬 Movies Update', url='https://t.me/+5aoApavIMVo1YzQ1'),
-            InlineKeyboardButton('❌ Close', callback_data='close_data')
+            InlineKeyboardButton('🎬 Movies Update', url='https://t.me/Pirated_Movies_Hub'),
+            InlineKeyboardButton('Join Our Group 👥', url='https://t.me/PiratedMoviesChat'),
+            ],[
+            InlineKeyboardButton(' 🎟️ Extra Features', callback_data= 'about')
+            InlineKeyboardButton('✖️ Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
